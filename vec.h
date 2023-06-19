@@ -9,6 +9,7 @@
 
 #include <stdbool.h>
 #include <stdlib.h>
+#include <time.h>
 
 typedef void* vector; // you can't use this to store vectors, it's just used
 		      // internally as a generic type
@@ -18,7 +19,7 @@ typedef unsigned char vec_type_t; // stores the number of bytes for a type
 typedef int* vec_int;
 typedef char* vec_char;
 typedef double* vec_double;
-
+typedef struct tm* vec_tm;
 
 #ifndef _MSC_VER
 
